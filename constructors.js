@@ -37,13 +37,39 @@ function expect(target) {
 // Only add code to *THIS* section!
 
 // ????????
-function Dog(color, hungry, status){
-  this.status = 'normal'
-  this.color = 'black'
-  this.hungry = true
+function Dog(dog){
+  if (dog) {
+    if(dog.status !== undefined){
+      this.status = dog.status
+    }
+    else{
+      this.status = 'normal'
+    }
+
+    if(dog.color !== undefined){
+      this.color = dog.color
+    }
+    else{
+      this.color = 'black'
+    }
+
+    if(dog.hungry !== undefined){
+      this.hungry = dog.hungry
+    }
+    else{
+      this.hungry = true
+    }  
+  }
 }
-function Human(cool){
-  this.cool = false
+function Human(human){
+  if (human){
+    if(human.cool !== undefined){
+      this.cool = human.cool
+    }
+    else{
+      this.cool = false
+    }
+  }
 }
 Human.prototype.cool = false
 Human.prototype.pet = function(petted){
