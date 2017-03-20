@@ -36,7 +36,6 @@ function expect(target) {
 //
 // Only add code to *THIS* section!
 
-// ????????
 function Dog(dog){
   if (dog) {
     if(dog.status !== undefined){
@@ -78,7 +77,6 @@ Human.prototype.pet = function(petted){
 Human.prototype.feed = function(fed){
   fed.hungry = false
 }
-// ????????
 
 
 //        __
