@@ -37,18 +37,15 @@ function expect(target) {
 // Only add code to *THIS* section!
 
 // ????????
-function Dog(){
-
+function Dog(color, hungry, status){
+  this.status = 'normal'
+  this.color = 'black'
+  this.hungry = true
 }
-Dog.prototype.status = 'normal'
-Dog.prototype.color = 'black'
-Dog.prototype.hungry = true
-
-function Human(){
-
+function Human(cool){
+  this.cool = false
 }
 Human.prototype.cool = false
-
 Human.prototype.pet = function(petted){
   petted.status = 'happy'
 }
